@@ -1,0 +1,140 @@
+.wrapper{
+    overflow: auto;
+}
+
+
+.header 
+{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:12%;
+    height: auto;
+    background-color: white;
+    vertical-align: top;
+    position: relative;
+}
+
+.header-name{
+     float:left;
+    font-family: "defaultText";
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+}
+.header-pages{
+   height:12%;
+
+    font-family: "defaultText";
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: block;
+    float:right;
+    
+    text-align: left;
+    vertical-align: middle;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+    
+}
+a {  
+    color: inherit; 
+    text-decoration: none;
+} 
+a:hover,
+a.selected
+{
+     text-decoration:underline; 
+     cursor:pointer;  
+}
+
+
+
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: defaultText;
+  src: url("Fonts/Abel-Regular.ttf");
+}
+
+/* [1] The container */
+.img-hover-zoom {
+    z-index: 0;
+    vertical-align: top;
+    font-size: 1rem;
+    display:inline-block;
+    height:auto;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+
+.container {
+    cursor: pointer;
+    display:inline-block;
+  position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    left:0px;
+   
+}
+.container:hover .overlay
+{
+    
+    opacity: 1;
+}
+.container:hover img{
+    
+    transform: scale(1.5)
+}
+
+.container img{
+    
+    transition: transform .4s ease;
+}
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+background-color: rgba(116, 121, 128,0.8);
+}
+
+
+.text {
+    font-family: "defaultText";
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
