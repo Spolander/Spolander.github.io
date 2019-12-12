@@ -1,5 +1,6 @@
 .wrapper{
-    overflow: auto;
+    text-align: center;
+    width:100%;
 }
 
 
@@ -46,8 +47,10 @@ a {
     color: inherit; 
     text-decoration: none;
 } 
-a:hover,
-a.selected
+a.current{
+    text-decoration: underline;
+}
+a:hover
 {
      text-decoration:underline; 
      cursor:pointer;  
@@ -62,6 +65,11 @@ html, body {
   margin: 0;
 }
 
+.text-centered{
+    
+    font-family: "defaultText";
+    text-align: center;
+}
 
 @font-face {
   font-family: defaultText;
@@ -137,4 +145,10 @@ background-color: rgba(116, 121, 128,0.8);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.music-wrapper{
+    margin: 0 auto;
+    width:25%;
+
 }
