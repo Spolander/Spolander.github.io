@@ -71,6 +71,14 @@ html, body {
     text-align: center;
 }
 
+.text-centered-narrow{
+    
+    font-family: "defaultText";
+    text-align: left;
+    width:40%;
+    margin: 0 auto;
+}
+
 @font-face {
   font-family: defaultText;
   src: url("Fonts/Abel-Regular.ttf");
@@ -94,6 +102,7 @@ html, body {
     overflow: hidden;
     vertical-align: top;
     left:0px;
+    float:left;
    
 }
 .container:hover .overlay
