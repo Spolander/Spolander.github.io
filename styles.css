@@ -1,6 +1,7 @@
 .wrapper{
     text-align: center;
     width:100%;
+overflow-x: hidden;
 }
 
 
@@ -57,18 +58,55 @@ a:hover
 }
 
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
+.sliding-container-left{
+    overflow: hidden;
+    float:left;
+ animation: 1s ease-out 0s 1 slideInFromLeft;
+  background: #333;
+    width:25%;
+    height: 100%;
+}
+
+.sliding-container-right{
+    overflow: hidden;
+    float:right;
+ animation: 1s ease-out 0s 1 slideInFromRight;
+  background: #333;
+    height:auto;
+    width:30%;
+}
 
 html, body {
   padding: 0;
   margin: 0;
 }
 
+
+
+
 .text-centered{
-    
     font-family: "defaultText";
     text-align: center;
+    height:auto;
+    
 }
 
 .text-centered-narrow{
@@ -77,6 +115,9 @@ html, body {
     text-align: left;
     width:40%;
     margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
