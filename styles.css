@@ -169,6 +169,12 @@ html, body {
   height: auto;
 }
 
+.image-fitheight{
+    display: block;
+  height: 100%;
+  width: auto; 
+}
+
 
 .overlay {
   position: absolute;
